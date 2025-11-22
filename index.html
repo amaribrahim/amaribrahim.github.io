@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amar Ibrahim</title>
+    <meta name="description"
+        content="Portfolio of Amar Ibrahim, creative technologist and interactive audio developer." />
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-elevated: #0b0b12;
+            --bg-soft: #10101a;
+            --border-subtle: rgb(246, 234, 234);
+            --text: #0f0f0f;
+            --text-soft: #4b4b4b;
+            --accent: #00e03f;
+            --accent-soft: rgba(0, 255, 208, 0.1);
+            --accent-strong: #001ee0;
+            --danger: #ff5b5b;
+            --radius-lg: 18px;
+            --radius-md: 12px;
+            --shadow-soft: 0 18px 4px rgba(0, 0, 0, 0.55);
+            --max-width: 1000px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, system-ui, -system-ui, "SF Pro Text", sans-serif;
+            color: var(--text);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .brand-mark {
+            width: 32px;
+            height: 32px;
+            border-radius: 999px;
+            box-shadow: 0 0 34px rgb(172, 171, 170);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: #020305;
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .brand-text-primary {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .brand-text-secondary {
+            font-size: 12px;
+            color: var(--text-soft);
+        }
+
+
+        main {
+            flex: 1;
+        }
+
+        .hero {
+            padding: 34px 0 18px;
+        }
+
+        .hero-inner {
+            display: grid;
+            grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.4fr);
+            gap: 32px;
+            align-items: center;
+        }
+
+
+        section.section {
+            padding: 32px 0 24px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+            padding: auto;
+        }
+
+
+
+        .project-header-row {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+            margin-bottom: 4px;
+        }
+
+
+        .project-title {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--text-soft);
+        }
+
+        .project-year {
+            font-size: 11px;
+            color: rgba(75, 75, 75, 0.6);
+            white-space: nowrap;
+        }
+
+        .project-meta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            font-size: 11px;
+            color: var(--text-soft);
+            margin-top: 4px;
+        }
+
+        .meta-label {
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            font-size: 10px;
+            color: var(--text-soft);
+        }
+
+        .project-description {
+            font-size: 13px;
+            color: var(--text-soft);
+            line-height: 1.6;
+            margin-top: 6px;
+        }
+
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 6px;
+        }
+
+        .tag-pill {
+            padding: 2px 7px;
+            font-size: 10px;
+            color: var(--text-soft);
+            white-space: nowrap;
+        }
+
+        .tools-row {
+            margin-top: 8px;
+            font-size: 11px;
+            color: var(--text-soft);
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 13px;
+            margin-top: 8px;
+        }
+
+        .contact-links a {
+            color: var(--text-soft);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 1px;
+            transition: color 0.16s ease-out, border-bottom-color 0.16s ease-out;
+        }
+
+        .contact-links a:hover {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        .bio-text {
+            margin-top: 6px;
+            font-size: 14px;
+            color: var(--text-soft);
+            line-height: 1.8;
+            max-width: 46rem;
+        }
+
+        .bio-text p {
+            margin: 0 0 10px;
+        }
+
+        .bio-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        .tools-label {
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            font-size: 10px;
+            margin-right: 6px;
+        }
+
+        footer.site-footer {
+            padding: 18px 0 22px;
+            border-top: 1px solid var(--border-subtle);
+            margin-top: 10px;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 16px;
+            font-size: 11px;
+            color: var(--text-soft);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            color: var(--text-soft);
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        .error-banner {
+            margin-top: 10px;
+            padding: 10px 12px;
+            border-radius: var(--radius-md);
+            background: rgba(255, 91, 91, 0.09);
+            border: 1px solid rgba(255, 91, 91, 0.6);
+            color: #ffdede;
+            font-size: 12px;
+            display: none;
+        }
+
+        @media (max-width: 800px) {
+            .hero-inner {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .about-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding-top: 26px;
+            }
+
+
+            .projects-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <main>
+
+
+
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-inner">
+                    <div class="hero-content">
+                        <div class="brand">
+
+                            <div class="brand-text">
+                                <div class="brand-text-primary">Amar Ibrahim</div>
+                                <div class="brand-text-secondary">Interactive Audio Developer &amp; Creative
+                                    Technologist</div>
+                            </div>
+                        </div>
+                        <div class="hero-links-spacer"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <div class="section-title">Bio</div>
+                    </div>
+                </div>
+                <div class="bio-text">
+                    <p>
+                        I build games, audio tools, and apps that explore new ways of experiencing sound.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <div class="section-title">Selected Work</div>
+                    </div>
+                </div>
+                <div id="projects-error" class="error-banner">
+                    Couldn&apos;t load projects data. Make sure <code>projects.json</code> is in the same folder or
+                    update the path in <code>script</code>.
+                </div>
+                <div id="projects-grid" class="projects-grid" aria-live="polite"></div>
+            </div>
+        </section>
+
+
+
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <div class="section-title">Contact</div>
+                    </div>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:amar@alienemoji.com">amar@alienemoji.com </a>
+                </div>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/amaribrahim" target="_blank"
+                        rel="noopener noreferrer">linkedin.com/in/amaribrahim</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div>&copy; <span id="year"></span> Amar Ibrahim.</div>
+                <div class="footer-links">
+                    <a href="#hero">Back to top</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        const projectsGrid = document.getElementById("projects-grid");
+        const projectsError = document.getElementById("projects-error");
+
+        function createProjectCard(project) {
+            const card = document.createElement("article");
+            card.className = "project-card";
+
+            const headerRow = document.createElement("div");
+            headerRow.className = "project-header-row";
+
+            const title = document.createElement("h3");
+            title.className = "project-title";
+            title.textContent = project["Project / Employer"] || "Untitled Project";
+
+            const year = document.createElement("div");
+            year.className = "project-year";
+            year.textContent = project["Year"] || "";
+
+            headerRow.appendChild(title);
+            headerRow.appendChild(year);
+
+            card.appendChild(headerRow);
+
+            const metaRow = document.createElement("div");
+            metaRow.className = "project-meta-row";
+
+            const roleLabel = document.createElement("span");
+            roleLabel.className = "meta-label";
+            roleLabel.textContent = "Role";
+            const roleValue = document.createElement("span");
+            roleValue.textContent = project["Role"] || "";
+            metaRow.appendChild(roleLabel);
+            metaRow.appendChild(roleValue);
+
+            card.appendChild(metaRow);
+
+            const description = document.createElement("p");
+            description.className = "project-description";
+            description.textContent = project["Description"] || "";
+            card.appendChild(description);
+
+            const toolsRow = document.createElement("div");
+            toolsRow.className = "tools-row";
+            const toolsLabel = document.createElement("span");
+            toolsLabel.className = "tools-label";
+            toolsLabel.textContent = "Tools";
+            const toolsValue = document.createElement("span");
+            toolsValue.textContent = project["Tech / Tools"] || "";
+            toolsRow.appendChild(toolsLabel);
+            toolsRow.appendChild(toolsValue);
+            card.appendChild(toolsRow);
+
+            // Tags section at the bottom of the card
+            const tagsWrapper = document.createElement("div");
+            tagsWrapper.className = "project-tags";
+            const tagsRaw = project["Notes / Tags"] || "";
+            const tags = tagsRaw
+                .split(",")
+                .map((t) => t.trim())
+                .filter(Boolean);
+            tags.forEach((tag) => {
+                const tagEl = document.createElement("span");
+                tagEl.className = "tag-pill";
+                tagEl.textContent = tag;
+                tagsWrapper.appendChild(tagEl);
+            });
+            card.appendChild(tagsWrapper);
+
+
+            return card;
+        }
+
+        function renderProjects(projects) {
+            if (!Array.isArray(projects)) return;
+            projectsGrid.innerHTML = "";
+
+            projects.forEach((project) => {
+                const card = createProjectCard(project);
+                projectsGrid.appendChild(card);
+            });
+        }
+
+        fetch("projects.json")
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.json();
+            })
+            .then((data) => {
+                renderProjects(data);
+            })
+            .catch((error) => {
+                console.error("Error loading projects.json:", error);
+                projectsError.style.display = "block";
+            });
+    </script>
+</body>
+
+</html>

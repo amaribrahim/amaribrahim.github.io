@@ -1,0 +1,66 @@
+[
+
+  {
+    "Year": "2025",
+    "Project / Employer": "Alien Relaxation Station",
+    "Description": "iOS music-making experience using animals, chords, and motion; intuitive musical UX.",
+    "Role": "Creator / Developer",
+    "Tech / Tools": "Unity (C#); FMOD",
+    "Notes / Tags": "Unity, iOS, Music Game, UX"
+  },
+  {
+    "Year": "2025",
+    "Project / Employer": "Alien Emoji Productions",
+    "Description": "End-to-end podcast production pipeline using a modern multi‑tool audio tech stack.",
+    "Role": "Founder / Lead Engineer",
+    "Tech / Tools": "Custom Workflow Automation",
+    "Notes / Tags": "Podcast, Audio Engineering, Production, Workflow"
+  },
+
+
+
+  {
+    "Year": "2023",
+    "Project / Employer": "Alton Audio Tour",
+    "Description": "Location-aware tour prototype unlocking narrative audio clips when visitors approach landmarks; early vertical slice with one destination.",
+    "Role": "Co-Creator / Developer",
+    "Tech / Tools": "Unity (C#); GPS API",
+    "Notes / Tags": "Interactive Audio, Tourism, GPS"
+  },
+
+  {
+    "Year": "2021",
+    "Project / Employer": "Equation Synth",
+    "Description": "Visual additive-synthesis demo for iOS showing real-time sine-wave summation with audible output. Users manipulate frequency and amplitude of individual sine waves to explore sound synthesis concepts.",
+    "Role": "Creator / Developer", 
+    "Tech / Tools": "Unity (C#)",
+    "Notes / Tags": "Unity, Audio Tool, Visualization"
+  },  
+ 
+  {
+    "Year": "2018",
+    "Project / Employer": "Flower Garden AR",
+    "Description": "Location-based bloom placement; early geospatial AR experiment.",
+    "Role": "Developer / Designer",
+    "Tech / Tools": "Unity (C#); GPS",
+    "Notes / Tags": "AR, Unity, GPS"
+  },
+  {
+    "Year": "2017",
+    "Project / Employer": "Music + Dance Visualizer",
+    "Description": "Real-time music visualizer linking DJ audio and dancing via OSC.",
+    "Role": "Creator / Interaction Designer",
+    "Tech / Tools": "TouchDesigner; OSC",
+    "Notes / Tags": "Installation, OSC, Visuals"
+  },
+  {
+    "Year": "Various",
+    "Project / Employer": "Secret Prototypes",
+    "Description": "Selected prototypes and systems in interactive audio kept out of public crawl for now. I love to discuss via email.",
+    "Role": "Creator / Developer",
+    "Tech / Tools": "Unity (C#); Xcode; Audio Prototyping Tools",
+    "Notes / Tags": "Gated, Case Studies, Interactive Audio"
+  }
+
+  
+]
