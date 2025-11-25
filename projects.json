@@ -17,13 +17,21 @@
     "Tech / Tools": "Custom Workflow Automation",
     "Notes / Tags": "Podcast, Audio Engineering, Production, Workflow"
   },
+  {
+  "Year": "2024",
+  "Project / Employer": "Web Dev",
+  "Description": "Designed and maintained modern websites for arts and wellness brands, focusing on fast performance, clear UX, and interactive front-end experiences.",
+  "Role": "Web Developer",
+  "Tech / Tools": "WordPress; Webflow; PHP; JavaScript; SCSS; Three.js",
+  "Notes / Tags": "Web Development, Front-End, Performance, SEO, WordPress, Webflow"
+  },
 
 
 
   {
     "Year": "2023",
     "Project / Employer": "Alton Audio Tour",
-    "Description": "Location-aware tour prototype unlocking narrative audio clips when visitors approach landmarks; early vertical slice with one destination.",
+    "Description": "Location-aware tour prototype unlocking narrative audio clips when visitors approach landmarks; Developed for Alton Odyssey Tours in Unity using GPS data.",
     "Role": "Co-Creator / Developer",
     "Tech / Tools": "Unity (C#); GPS API",
     "Notes / Tags": "Interactive Audio, Tourism, GPS"
