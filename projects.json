@@ -3,7 +3,8 @@
   {
     "Year": "2025",
     "Project / Employer": "Alien Relaxation Station",
-    "Description": "iOS music-making experience using animals, chords, and motion; intuitive musical UX.",
+    "Description": "iOS music-making experience using animals, chords, and motion; intuitive musical UX. <a  href='https://apps.apple.com/us/app/alien-relaxation-station/id6472541742' target='_blank'>iOS App link</a>" ,
+    
     "Role": "Creator / Developer",
     "Tech / Tools": "Unity (C#); FMOD",
     "Notes / Tags": "Unity, iOS, Music Game, UX"
@@ -56,7 +57,7 @@
   {
     "Year": "Various",
     "Project / Employer": "Secret Prototypes",
-    "Description": "Selected prototypes and systems in interactive audio kept out of public crawl for now. I love to discuss via email.",
+    "Description": "Selected prototypes and systems in interactive audio kept out of public crawl for now. I would love to discuss via email.",
     "Role": "Creator / Developer",
     "Tech / Tools": "Unity (C#); Xcode; Audio Prototyping Tools",
     "Notes / Tags": "Gated, Case Studies, Interactive Audio"

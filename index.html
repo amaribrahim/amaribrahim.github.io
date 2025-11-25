@@ -38,6 +38,12 @@
             -webkit-font-smoothing: antialiased;
         }
 
+        .projectLink {
+            color: inherit;
+            text-decoration: none;
+            border: #00e03f;
+        }
+
         body {
             min-height: 100vh;
             display: flex;
@@ -215,7 +221,16 @@
             margin-top: 8px;
         }
 
-        .contact-links a {
+        .project-description a {
+            color: #a0a0a0 !important;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 1px;
+            transition: color 0.16s ease-out, border-bottom-color 0.16s ease-out;
+        }
+
+        .contact-links a,
+        .project-description a {
             color: var(--text-soft);
             text-decoration: none;
             border-bottom: 1px solid transparent;
@@ -223,7 +238,8 @@
             transition: color 0.16s ease-out, border-bottom-color 0.16s ease-out;
         }
 
-        .contact-links a:hover {
+        .contact-links a:hover,
+        .project-description a:hover {
             color: var(--accent);
             border-bottom-color: var(--accent);
         }
@@ -445,7 +461,8 @@
 
             const description = document.createElement("p");
             description.className = "project-description";
-            description.textContent = project["Description"] || "";
+            // description.textContent = project["Description"] || "";
+            description.innerHTML = project["Description"] || "";
             card.appendChild(description);
 
             const toolsRow = document.createElement("div");
